@@ -1,0 +1,497 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', serif;
+  background: url('inc/img/lightpaperfibers.png') repeat;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+a {
+  color: #006666;
+}
+
+.tab-content a {
+  color: #0c5449;
+  background-color: #f2f1e9;
+}
+
+.navbar > .container .navbar-brand {
+margin-left: -35px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #DAD6BD;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #0C5449;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+ // background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+ // padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
+.navbar-collapse {
+  padding-top: 20px;
+}
+
+.page-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 60px 0;
+  border: none;
+  background-color: #0e6356;
+}
+
+.lead {
+  margin: 5px 0;
+  padding: 15px;
+  font-size: 24px;
+  background-color: #0C5449;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 1px #222;
+}
+
+.service {
+  width: 99%;
+  background-color: #e6e4d3;
+  padding: 5px 15px;
+}
+
+.page-header h1 {
+  font: 700 72px "Oswald";
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  //width: 800px;
+
+  //font-family: 'Holtwood One SC', serif;
+  //font-size: 55px;
+  //text-transform: uppercase;
+  //text-align: center;
+  //color: #fff;
+  text-shadow: 2px 2px 2px #222;
+}
+
+h1 {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #fff;
+  background-color: #0e6356;
+text-shadow: 1px 1px 1px #222;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+
+h3 {
+  font-size: 12px;
+  font-family: 'Roboto';
+  margin: 5px 0;
+  padding-bottom: 10px;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.service hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#footer > .container {
+  margin-top: 10px;
+  padding: 0 15px;
+  font-size: 11px;
+}
+
+.tall {
+  min-height: 300px;
+}
+
+.factor {
+margin: 25px 0;
+overflow: hidden;
+}
+
+.factor h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.pro, .con {
+  float: left;
+  width: 50%;
+}
+
+div.pro p, div.con p {
+font-style: italic;
+width: 100%;
+padding-bottom: 8px;
+border-bottom: 1px solid #ccc;
+}
+
+div.factor p.favor, div.factor p.against {
+font-size: 1.25em;
+font-weight: 400;
+text-align: center;
+}
+
+.bb {
+  float: right;
+}
+
+label {
+  display: inline;
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.submitwrap {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.button {;
+background-color: #89c403;
+border: 2px solid #74b807;
+display: inline-block;
+color: #ffffff;
+font-family: Georgia;
+font-size: 21px;
+padding: 7px 30px;
+text-decoration: none;
+cursor: pointer;
+}
+
+ul.checklist {
+  list-style: none;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+color: #555555;
+cursor: default;
+background-color: transparent;
+border: 1px solid #ddd;
+border-bottom-color: #fff;
+}
+
+object {
+  width: 100%;
+  height: 100%;
+}
+
+#tree {
+    padding-left: 0;
+}
+#tree h3 {
+    margin-bottom: 20px;
+}
+
+#tree ul {
+    margin-bottom:20px;
+    margin:0;
+    padding:0;
+}
+
+#tree li {
+    list-style: none;
+}
+
+#tree ol li {
+    list-style: decimal;
+}
+#tree .btntree {
+    font-size: 14px;
+    background-color: #e6e4d3; 
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 2px;
+    line-height: 1.428571429;
+}
+
+#tree a:link.btntree,
+#tree a:visited.btntree {
+    background-color: #e6e4d3;
+}
+#tree a:link,
+#tree a:visited {
+    text-decoration: none;
+    color: #0c5449;
+    background-color: #f2f1e9;
+}
+#tree a:hover,
+#tree a:active {
+    color: #0c5449;
+    background-color: #eee;
+}
+#tree .clearfix {
+    clear: both;
+    margin-bottom: 20px;
+}
+#tree .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 50px;
+}
+#tree .statement {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+#tree .didwe {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 679px) { 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  padding: 0;
+}
+
+.navbar-header {
+  height: 100px;
+}
+
+.navbar-header .navbar-brand img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -116px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.navbar-collapse.in {
+  overflow: hidden;
+}
+
+.navbar-nav {
+  padding: 0 30px;
+}
+
+.pull-right {
+  float: none !important;
+}
+
+.page-header {
+  padding: 20px 0;
+}
+
+.page-header h1 {
+  font-size: 36px;
+}
+
+.service {
+    margin-bottom: 20px;
+  }
+
+.bb {
+  padding-bottom: 10px;
+  width: 50%;
+  height: auto;
+}
+
+p.lead {
+  font-size:18px;
+}
+
+#checklist label {
+  font-size: 12px;
+}
+
+ul.checklist {
+  margin-left: -30px;
+}
+}
+
+
+@media (min-width: 680px) and (max-width: 767px) {
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  padding: 0;
+}
+
+.navbar-header {
+  height: 100px;
+}
+
+.navbar-header .navbar-brand img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -116px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.navbar-collapse.in {
+  overflow: hidden;
+}
+
+.navbar-nav {
+  padding: 0 30px;
+}
+
+.pull-right {
+  float: none !important;
+}
+
+.page-header {
+  padding: 40px 0;
+}
+
+.page-header h1 {
+  font-size: 52px;
+}
+
+.service {
+    margin-bottom: 20px;
+  }
+
+.bb {
+  padding-bottom: 10px;
+  width: 50%;
+  height: auto;
+}
+
+p.lead {
+  font-size:18px;
+}
+
+#checklist label {
+  font-size: 12px;
+}
+
+ul.checklist {
+  margin-left: -30px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  padding: 0;
+}
+
+.navbar-header {
+  height: 100px;
+}
+
+.navbar-header .navbar-brand img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -116px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.navbar-nav {
+  margin-top: 90px;
+}
+
+.page-header {
+  padding: 40px 0;
+}
+
+.page-header h1 {
+  font-size: 52px;
+}
+
+.service {
+    margin-bottom: 20px;
+  }
+
+.bb {
+  padding-bottom: 10px;
+}
+
+p.lead {
+  font-size:18px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  padding: 0;
+}
+
+.navbar-nav {
+  margin-top: 20px;
+}
+
+.page-header h1 {
+  font-size: 52px;
+}
+
+.service {
+    height: 255px;
+  }
+
+.bb {
+  padding-bottom: 10px;
+}
+}

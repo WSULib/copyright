@@ -1,0 +1,205 @@
+/* 
+	Wayne Green: #0C5449;
+	Taupe: #E1DDC9;
+*/
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1 {
+	padding: 10px;
+}
+
+.wrapper {
+	width: 94%;
+	max-width: 1300px;
+	margin: auto;
+}
+
+.header {
+	background: #0C5449;
+}
+
+.tools {
+	background: #EEE;
+}
+
+.tools ul {
+	padding: 10px;
+}
+
+.banner {
+	background: #EEE;
+}
+
+.header {
+	color: #FFF;
+}
+
+.footer {
+	color: #000;
+	background: #CCC;
+}
+
+.footer p {
+	font-size: .8em;
+	padding: 10px;
+}
+
+h3 a {
+	color: #000;
+	text-decoration: none;
+}
+
+.menu {
+	background: #EEE;
+	font-size: 1.3em;
+}
+
+.advert {
+	font-size: 1.3em;
+}
+
+/* --------------------------------------------------decision tree stuff */
+
+#question {
+    margin:0.3em 0 0.3em; 
+    font-family:Verdana, 'Actor', sans-serif; 
+    font-size:110%; 
+} 
+
+.answers {
+    margin:0.5em 0 0.5em 1em; 
+    font-family:Verdana, 'Actor', sans-serif; 
+}
+#showquestion li {
+    padding:0.2em;
+    list-style-image:url(../images/bullet_orange.png)
+} 
+#showquestion li:hover {
+    cursor:pointer; 
+    background-color: #0c5449;
+    color:#eee; 
+} 
+
+#showquestion p {
+    font-weight:bold;
+    margin-top:0px; 
+} 
+
+#showquestion div {
+    margin:0.5em auto; 
+    padding:0.5em; 
+	width: 600px;
+	background: white;
+} 
+
+#showquestion .selected {
+    font-weight:bold; 
+    list-style-image:url(../images/bullet_go.png)
+} 
+.luiTitle {
+    font-size:160%; 
+    text-shadow:#888 1px 1px 1px;
+    padding:0.2em;
+    } 
+    
+/* --------------------------------------------------checklist stuff */
+	.checklist {
+		list-style-type: none;
+	}
+	
+    #decision .favor { color: #090; }
+    #decision .against { color: #990033; }
+	
+	ul.checklist li {
+		margin: 8px inherit;
+	}
+	
+	
+	
+	div.factor h2 {
+		text-align: left;
+		color: #0E7969;
+	}
+	.factor h3 {
+		text-align: center;
+		font-weight: normal;
+	}
+	
+	div.factor {
+	 margin-bottom: 25px;
+	 /*border: 1px solid #FED77D;
+	 -moz-border-radius: 6px; 
+     -webkit-border-radius: 6px; */
+         overflow: hidden;	
+        }
+        div.factor p.favor, div.factor p.even, div.factor p.against {
+                font-size: 1.75em;
+                text-align: center; }
+        #checklist div.factor p.favor, #checklist div.factor p.against {
+                font-size: 1.25em; }
+        div.pro, div.con {
+                float: left;
+                width: 50%; }	
+        div.pro p, div.con p {
+                font-style: italic;
+                width: 100%;
+				padding-bottom: 8px;
+                border-bottom: 1px solid #ccc; }
+        	
+        #factor1 {
+		margin-top: 25px;
+	}
+	
+	.submit {
+		text-align: center;
+		padding: 10px 10px 40px 10px;
+	}
+	
+	#tooltip{
+	position:absolute;
+	border:1px solid #333;
+	background:#f7f5d1;
+	padding:2px 5px;
+	color:#333;
+	display:none;
+	width: 300px;
+	}
+	
+	#checklist li {
+		list-style-type: none;
+	}
+	
+	#decision {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #bbb; }
+	.button {
+	background-color:#89c403;
+	border:2px solid #74b807;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:21px;
+	padding:7px 30px;
+	text-decoration:none;
+	cursor:pointer;}
+	.button:hover {
+	background-color:#77a809; }
+	.button:active {
+	position:relative;
+	top:1px; }
+	.submitwrap {
+		text-align: center;
+		margin-bottom: 30px; }
+	
+	.checklist li {
+		position: relative;
+		clear: both; }
+	.checklist li input {
+		position: absolute; }
+	.checklist li label {
+		display: block;
+		margin-left: 10%; }
