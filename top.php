@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="inc/ico/favicon.png">
+    <link rel="shortcut icon" href="http://wayne.edu/global/favicon.ico">
 
     <title>Copyright Resources from Wayne State University Libraries</title>
 
@@ -29,6 +29,23 @@
       <script src="inc/js/html5shiv.js"></script>
       <script src="inc/js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://cgi.lib.wayne.edu/stats/piwik/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "22"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
   </head>
 
   <body>
@@ -46,7 +63,6 @@
           </div>
           <div class="collapse navbar-collapse pull-right">
             <ul class="nav navbar-nav">
-              <li><a href="index.php">Home</a></li>
               <li><a href="basics.php">Copyright Basics</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Copyright Tools <b class="caret"></b></a>
@@ -56,6 +72,7 @@
                 </ul>
               </li>
               <li><a href="blackboard.php">Copyright Guidelines for Blackboard</a></li>
+              <li><a href="http://blogs.wayne.edu/copyright/" target="_blank">Blog</a></li>
               <li><a href="contact.php">Contact Us</a></li>
             </ul>
           </div><!--/.nav-collapse -->

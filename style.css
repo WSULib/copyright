@@ -13,6 +13,11 @@ a {
   color: #006666;
 }
 
+a:hover,
+a:active {
+  color: #666;
+}
+
 .tab-content a {
   color: #0c5449;
   background-color: #f2f1e9;
@@ -80,12 +85,17 @@ img {
   padding-top: 20px;
 }
 
+.navbar .nav > li {
+  z-index: 1000;
+}
+
 .page-header {
   margin-top: 0;
   margin-bottom: 30px;
   padding: 60px 0;
   border: none;
   background-color: #0e6356;
+  z-index: 1;
 }
 
 .lead {
@@ -96,6 +106,61 @@ img {
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 1px #222;
+}
+
+.head-cnt {
+  overflow: hidden;
+  height: 55px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.news-header {
+  line-height: 0.5;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  margin-top: 30px;
+}
+.news-header span {
+  display: inline-block;
+  position: relative;  
+}
+.news-header span:before,
+.news-header span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+  top: 0;
+  width: 445px;
+}
+.news-header span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.news-header span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.blog {
+  background: #e6e4d3;
+  padding: 5px 15px;
+  margin-top: 30px;
+}
+
+.date {
+  font-size: 12px;
+  font-family: 'Roboto';
+  margin-top: 10px;
+}
+
+h5 {
+  margin-top: 0;
 }
 
 .service {
@@ -148,7 +213,7 @@ h3 {
   margin-top: 30px;
 }
 
-.service hr {
+.service hr, .blog hr {
     border: 0;
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -493,5 +558,9 @@ p.lead {
 
 .bb {
   padding-bottom: 10px;
+}
+
+.blog {
+  min-height: 230px;
 }
 }
