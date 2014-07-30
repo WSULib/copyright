@@ -19,7 +19,8 @@
 		      	<div class="form-group">
 		        	<label for="Tel" class="pull-left">Phone</label>
 		        	<input type="tel" class="form-control" name="Tel" id="Tel" placeholder="Enter your phone number">
-		      	</div>            
+		      	</div>
+                <input id="Website" name="Website" type="text" value=""  />              
 			</div>  
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right">
 		      	<div class="form-group">

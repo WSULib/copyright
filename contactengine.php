@@ -7,13 +7,16 @@ $Name = Trim(stripslashes($_POST['Name']));
 $Tel = Trim(stripslashes($_POST['Tel'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
 $Message = Trim(stripslashes($_POST['Message'])); 
+$Website = Trim(stripslashes($_POST['Website'])); 
 
 // validation
-$validationOK=true;
-if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-  exit;
+
+if (strlen($Website) != 0) {
+	  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.php\">";
+	  exit;
 }
+
+else {
 
 // prepare email body text
 $Body = "";
@@ -42,5 +45,6 @@ if ($success){
 }
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+}
 }
 ?>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title> Bootstrap modal with form</title>
+        <meta name="description" content="Validate form input on a Bootstrap modal">
+        <meta name="keywords" content="form,modal,submit">
+        <meta name="google-site-verification" content="MIaHKEqspbaoI62kQsOLavc6RdqMZtpkmoYNrpqzhqs" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
+        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <style type="text/css" id="bsCss">
+        /* override bootstrap styles */
+        
+        </style>
+    </head>
+    <body  >
+        <a href="#myModal1" role="button" class="btn" data-toggle="modal">Launch modal</a>
+
+  <!-- Modal1 -->
+  
+  <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="myModalLabel">Edit Introduction</h3>
+    </div><i class="icon-beaker"></i>
+  
+    <div class="modal-body">
+  
+      <form id="InfroText" method="POST">
+  
+      <input type="hidden" name="InfroText" value="1">
+  
+      <table>
+        <tbody><tr><td>Title</td><td><input type="text" name="title" id="title" style="width:300px"><span class="hide help-inline">This is required</span></td></tr>
+        <tr><td>Introudction</td><td><textarea name="contect" style="width:300px;height:100px"></textarea></td></tr>
+      </tbody></table>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      <button class="btn btn-primary" data-dismiss="modal" id="InfroTextSubmit">Save changes</button>
+    </div>
+</div>
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    
+    
+    
+        <script type='text/javascript' id="bsJs">
+        
+        $(document).ready(function() {
+        
+            $('#InfroTextSubmit').click(function(){
+    
+    if ($('#title').val()==="") {
+      // invalid
+      $('#title').next('.help-inline').show();
+      return false;
+    }
+    else {
+      // submit the form here
+      // $('#InfroText').submit();
+      
+      return true;
+    }
+  
+      
+      
+});
+        
+        });
+        
+        </script>
+        
+    </body>
+</html>

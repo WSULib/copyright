@@ -50,9 +50,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="head-cnt">
           <h2 class="news-header"><span><a href="http://blogs.wayne.edu/copyright" target="_blank">Latest News from Our Blog</a></span></h2>
-          </div>
         <?php
             $rss = new DOMDocument();
             $rss->load('http://blogs.wayne.edu/copyright/feed/');
@@ -68,9 +66,9 @@
                 }
                 $limit = 3;
                 for($x=0;$x<$limit;$x++) {
-                  $title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+                  $title = str_replace(' & ', ' &amp; ', substr($feed[$x]['title'], 0, 45)."...");
                   $link = $feed[$x]['link'];
-                  $description = substr($feed[$x]['desc'], 0, 200)."...";
+                  $description = substr($feed[$x]['desc'], 0, 190)."...";
                   $date = date('M d, Y', strtotime($feed[$x]['date']));
 
 
